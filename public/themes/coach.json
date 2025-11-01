@@ -1,0 +1,65 @@
+{
+  "id": "cb_demo_branding",
+  "theme": {
+    "primary": "#ff0055",
+    "overlayOpacity": 0.7,
+    "ctaOverlayOpacity": 0.0,
+    "shape": "rounded-rect",
+    "bubble": { "width": 180, "height": 100 },
+    "border": { "color": "#FFFFFF", "width": 2 },
+    "caption": {
+      "text": "🎬 Clique pour voir la vidéo",
+      "color": "#fff",
+      "bgAlpha": 0.35,
+      "fontSize": 15,
+      "position": "left",
+      "maxFraction": 0.5
+    }
+  },
+  "launcherContent": {
+    "type": "videoPreview",
+    "src": "videos/preview.mp4",
+    "previewSeconds": 3
+  },
+  "position": "BR",
+  "animation": "pulse",
+  "video": {
+    "src": "videos/demo.mp4",
+    "poster": "",
+    "maxDurationSec": 180
+  },
+  "ctaMode": "timed",
+  "ctas": [
+    { "label": "🛒 Acheter", "href": "https://example.com/checkout" },
+    { "label": "ℹ️ En savoir plus", "href": "https://example.com/info" },
+    { "label": "📞 Contact", "href": "https://example.com/contact" },
+    { "label": "⭐ Avis Clients", "href": "https://example.com/reviews" }
+  ],
+  "timing": {
+    "sequence": [
+      { "index": 0, "showAt": 5, "duration": 3 },
+      { "index": 1, "showAt": 15, "duration": 5 },
+      { "index": 2, "showAt": 25, "duration": 2 }
+    ],
+    "showAllAt": 33
+  },
+  "branding": {
+    "enabled": true,
+    "label": "ConvertBubble",
+    "color": "#ff0055"
+  },
+  "behavior": {
+    "openFullScreenMobile": true,
+    "openLinksInParent": true
+  },
+  "display": {
+    "rules": {
+      "mode": "blocklist",
+      "patterns": ["/thank-you", "/checkout"]
+    }
+  },
+  "ctaOverlay": {
+    "buttonOpacity": 0.63
+  }
+}
+
